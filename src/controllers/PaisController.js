@@ -56,12 +56,12 @@ export const updatePais = async (req, res) => {
     const { id } = req.params;
     const { nombre, habitantes } = req.body;
 
-    const Pais = await Pais.findByPk(id);
-    Pais.nombre = nombre;
-    Pais.habitantes = habitantes;
-    await Pais.save();
+    const pais = await Pais.findByPk(id);
+    pais.nombre = nombre;
+    pais.habitantes = habitantes;
+    await pais.save();
 
-    res.json(Pais);
+    res.json(pais);
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }

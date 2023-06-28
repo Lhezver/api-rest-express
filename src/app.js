@@ -1,6 +1,9 @@
 import express from "express";
-
 const app = express();
+import swaggerUi from 'swagger-ui-express';
+import swaggerDocument from './swagger.json' assert { type: "json" };
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Import routes
 import paisRoutes from "./routes/PaisRoutes.js";
