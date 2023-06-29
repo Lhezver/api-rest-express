@@ -22,3 +22,4 @@ Go to documentation [http://localhost:3000/api-docs/](http://localhost:3000/api-
 | Sequelize | [https://sequelize.org/](https://sequelize.org/) |
 | mariadb | [https://github.com/mariadb-corporation/mariadb-connector-nodejs#readme](https://github.com/mariadb-corporation/mariadb-connector-nodejs#readme) |
 | swagger-ui-express | [https://github.com/scottie1984/swagger-ui-express#readme](https://github.com/scottie1984/swagger-ui-express#readme) |
+| cors | [https://github.com/expressjs/cors](https://github.com/expressjs/cors) |
